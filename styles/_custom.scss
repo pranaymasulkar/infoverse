@@ -1,0 +1,45 @@
+@import "layout";
+
+// Home Slider
+
+.info-hero {
+  background-image: linear-gradient(
+    to right bottom,
+    #02082a,
+    #011139,
+    #011139,
+    #031749,
+    #0a1b59
+  );
+}
+
+// About Section
+.info-home-about-combine {
+  background-image: linear-gradient(
+    to right bottom,
+    #01113a,
+    #03174a,
+    #091a56,
+    #020a2e,
+    #020a2e
+  );
+}
+.info-home-about {
+  background-image: url(../assets/img/core-img/aboutbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+// Artificial Inteligence
+.info-home-ai {
+}
+
+.info-home-spacetech {
+  background-image: url(../assets/img/core-img/SpaceTechnology.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  .info-home-space-detail {
+    background-color: #00000057;
+  }
+}

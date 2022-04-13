@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"..\\layout\\Header\\Header.jsx -> ../../components/Preloader":{"id":"..\\layout\\Header\\Header.jsx -> ../../components/Preloader","files":["static/chunks/components_Preloader_index_jsx.js"]},"Home.jsx -> ../layout/Header/Header":{"id":"Home.jsx -> ../layout/Header/Header","files":["static/chunks/layout_Header_Header_jsx.js"]}}

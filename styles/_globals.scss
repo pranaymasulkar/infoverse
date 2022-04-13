@@ -1,0 +1,13 @@
+// @import 'bootstrap/dist/css/bootstrap.css';
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  box-sizing: border-box;
+}
+
+@import 'style';
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  // background-color: var(--color-bgwhite-mode);
+}

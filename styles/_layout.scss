@@ -1,0 +1,122 @@
+//=============== Preloader ================
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background: #0c1235;
+  background: -webkit-linear-gradient(to right, #0c1235, #020a2e);
+  background: -webkit-linear-gradient(left, #0c1235, #020a2e);
+  background: linear-gradient(to right, #0c1235, #020a2e);
+}
+
+.preload-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -35px;
+  margin-left: -35px;
+  z-index: 100;
+}
+
+#dream-load {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  -webkit-animation: dreamrotate 2400ms linear infinite;
+  animation: dreamrotate 2400ms linear infinite;
+  z-index: 999;
+}
+
+#dream-load:before {
+  content: "";
+  position: absolute;
+  top: 7.5px;
+  left: 7.5px;
+  right: 7.5px;
+  bottom: 7.5px;
+  border-radius: 50%;
+  border: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  -webkit-animation: dreamrotate 2700ms linear infinite;
+  animation: dreamrotate 2700ms linear infinite;
+}
+
+#dream-load:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  border: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  -webkit-animation: dreamrotate 1800ms linear infinite;
+  animation: dreamrotate 1800ms linear infinite;
+}
+
+@-webkit-keyframes dreamrotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dreamrotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+// Header
+
+.navbar {
+  .navbar-nav {
+    .nav-link {
+      color: var(--color-white);
+      text-transform: uppercase;
+    }
+  }
+}
+
+footer {
+  background-image: linear-gradient(
+    to right bottom,
+    #01113a,
+    #03174a,
+    #091a56,
+    #020a2e,
+    #020a2e
+  );
+  h5 {
+    color: var(--color-white);
+    font-weight: 600;
+  }
+  .nav-link {
+    color: var(--color-white);
+    padding-left: 0;
+  }
+  .nav-link.disabled {
+    color: var(--color-white);
+  }
+}
