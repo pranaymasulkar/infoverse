@@ -2,7 +2,18 @@ import dynamic from "next/dynamic";
 // import Header from '../layouts/Header';
 // import Footer from '../layouts/Footer';
 // import '../assets/css/HomeDemo2.css'
-import { Slider1, artificial } from "../utils/allImgs";
+import {
+  Slider1,
+  artificial,
+  MobileAppDevelopment,
+  SoftwareDevelopment,
+  uiuxDesigning,
+  WebDevelopment,
+  blog1,
+  blog2,
+  blog3,
+  blog4,
+} from "../utils/allImgs";
 import { Container, Row, Col, Button, Image, Card } from "react-bootstrap";
 import Footer from "../layout/Footer/Footer";
 
@@ -135,56 +146,157 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="">
+      <section className="info-home-servetech py-5">
         <Container>
-          <Row className="d-flex justify-content-end align-items-center">
-            <Col md={3} className="info-home-space-detail py-5">
-              <Card className="">
-                <Card.Body>
-                  <Card.Title>Web Development</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
+          <Row className="d-flex justify-content-center align-items-center">
+            <Col className="text-center pb-5">
+              <h2>We can help you in every digital way possible</h2>
+            </Col>
+          </Row>
+          <Row className="d-flex justify-content-center align-items-center">
+            <Col md={3}>
+              <Card className="info-home-servetech-card border-0 shadow white text-center">
+                <Card.Body className="py-5">
+                  <Image src={WebDevelopment.src} className="img-fluid" />
+                  <Card.Title className="mt-4">Web Development</Card.Title>
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={3} className="info-home-space-detail py-5">
-              <Card className="">
-                <Card.Body>
-                  <Card.Title>Mobile App Development</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
+            <Col md={3}>
+              <Card className="info-home-servetech-card border-0 shadow white text-center">
+                <Card.Body className="py-5">
+                  <Image src={MobileAppDevelopment.src} className="img-fluid" />
+                  <Card.Title className="mt-4">
+                    Mobile App Development
+                  </Card.Title>
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={3} className="info-home-space-detail py-5">
-              <Card className="">
-                <Card.Body>
-                  <Card.Title>Software Development</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
+            <Col md={3}>
+              <Card className="info-home-servetech-card border-0 shadow white text-center">
+                <Card.Body className="py-5">
+                  <Image src={SoftwareDevelopment.src} className="img-fluid" />
+                  <Card.Title className="mt-4">Software Development</Card.Title>
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={3} className="info-home-space-detail py-5">
-              <Card className="">
-                <Card.Body>
-                  <Card.Title>UI/UX Designing</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
+            <Col md={3}>
+              <Card className="info-home-servetech-card border-0 shadow white text-center">
+                <Card.Body className="py-5">
+                  <Image src={uiuxDesigning.src} className="img-fluid" />
+                  <Card.Title className="mt-4">UI/UX Designing</Card.Title>
                 </Card.Body>
               </Card>
             </Col>
           </Row>
         </Container>
       </section>
+
+      <section className="info-home-servetech py-5">
+        <Container>
+          <Row className="d-flex justify-content-center align-items-center">
+            <Col className="text-center pb-5">
+              <h2>Recent Blog Post</h2>
+              <p>
+                Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                commodo consequat.
+              </p>
+            </Col>
+          </Row>
+          <Row className="d-flex justify-content-between align-items-center">
+            <Col md={6}>
+              <Card className="mb-4">
+                <Card.Body className="p-0">
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="w-50 m-3">
+                      <Card.Title className="">
+                        Typical Process of Successful Mobile Development
+                      </Card.Title>
+                      <Card.Title className="mt-4">
+                        Create an immutable master ledger between trading
+                        parties; use smart contracts to eliminate bad invoices;
+                        have a single system of record that is accessible to all
+                        partners involved in a transaction.
+                      </Card.Title>
+                    </div>
+                    <div>
+                      <Image src={blog1.src} className="img-fluid" />
+                    </div>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={6}>
+              <Card className="mb-4">
+                <Card.Body className="p-0">
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="w-50 m-3">
+                      <Card.Title className="">
+                        Typical Process of Successful Mobile Development
+                      </Card.Title>
+                      <Card.Title className="mt-4">
+                        Create an immutable master ledger between trading
+                        parties; use smart contracts to eliminate bad invoices;
+                        have a single system of record that is accessible to all
+                        partners involved in a transaction.
+                      </Card.Title>
+                    </div>
+                    <div>
+                      <Image src={blog2.src} className="img-fluid" />
+                    </div>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={6}>
+              <Card className="mb-4">
+                <Card.Body className="p-0">
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div>
+                      <Image src={blog3.src} className="img-fluid" />
+                    </div>
+                    <div className="w-50 m-3">
+                      <Card.Title className="">
+                        Typical Process of Successful Mobile Development
+                      </Card.Title>
+                      <Card.Title className="mt-4">
+                        Create an immutable master ledger between trading
+                        parties; use smart contracts to eliminate bad invoices;
+                        have a single system of record that is accessible to all
+                        partners involved in a transaction.
+                      </Card.Title>
+                    </div>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={6}>
+              <Card className="mb-4">
+                <Card.Body className="p-0">
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div>
+                      <Image src={blog4.src} className="img-fluid" />
+                    </div>
+                    <div className="w-50 m-3">
+                      <Card.Title className="">
+                        Typical Process of Successful Mobile Development
+                      </Card.Title>
+                      <Card.Title className="mt-4">
+                        Create an immutable master ledger between trading
+                        parties; use smart contracts to eliminate bad invoices;
+                        have a single system of record that is accessible to all
+                        partners involved in a transaction.
+                      </Card.Title>
+                    </div>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
       <Footer />
     </>
   );
