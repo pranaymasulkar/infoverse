@@ -27,13 +27,13 @@ const Header = dynamic(
 const Home = () => {
   return (
     <>
-      <Header Title="Home" />
+      <Header/>
       <section className="info-hero py-5">
         <Container>
           <Row className="d-flex justify-content-center align-items-center py-5">
             <Col>
               <h1>Embrace Web 3. Embrace Transformation.</h1>
-              <p>
+              <p className="white">
                 Unearth the blockchain potential to overhaul enterprise &
                 institutional processes.
               </p>

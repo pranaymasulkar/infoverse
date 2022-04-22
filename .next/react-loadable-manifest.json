@@ -5,8 +5,8 @@
       "static/chunks/components_Preloader_index_jsx.js"
     ]
   },
-  "Home.jsx -> ../layout/Header/Header": {
-    "id": "Home.jsx -> ../layout/Header/Header",
+  "Contact.jsx -> ../layout/Header/Header": {
+    "id": "Contact.jsx -> ../layout/Header/Header",
     "files": [
       "static/chunks/layout_Header_Header_jsx.js"
     ]

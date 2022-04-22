@@ -15,6 +15,16 @@ import blog2 from "../../assets/img/blog-img/blog2.png";
 import blog3 from "../../assets/img/blog-img/blog3.png";
 import blog4 from "../../assets/img/blog-img/blog4.png";
 
+// About Us Page Iamges
+
+import AbouHero from "../../assets/img/core-img/about-hero.png";
+import AboutMission1 from "../../assets/img/core-img/ab-mission1.png";
+import AboutMission2 from "../../assets/img/core-img/ab-mission2.png";
+import AboutMission3 from "../../assets/img/core-img/ab-mission3.png";
+import OurMision from "../../assets/img/core-img/ourmision.png";
+import TeamMember1 from "../../assets/img/core-img/TeamMember1.png";
+import TeamMember2 from "../../assets/img/core-img/TeamMember2.png";
+
 export {
 
 
@@ -33,6 +43,14 @@ export {
 	blog2,
 	blog3,
 	blog4,
+	
+	AbouHero,
+	AboutMission1,
+	AboutMission2,
+	AboutMission3,
+	OurMision,
+	TeamMember1,
+	TeamMember2,
 
 
 

@@ -45,6 +45,20 @@ function Header({Title}){
                 <div className="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
+                            <Link href="/About">
+                                <a className="nav-link">
+                                About
+                                </a>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link href="/Contact">
+                                <a className="nav-link">
+                                Contact
+                                </a>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
                             <Link href="/">
                                 <a className="nav-link">
                                    <RiMenu4Fill/> Menu
@@ -52,13 +66,6 @@ function Header({Title}){
                             </Link>
                         </li>
                         {/* <li className="nav-item">
-                            <Link href="/Discover">
-                                <a className="nav-link">
-                                Discover
-                                </a>
-                            </Link>
-                        </li>
-                        <li className="nav-item">
                             <Link href="/CreateItem">
                                 <a className="nav-link">
                                 Create Item
