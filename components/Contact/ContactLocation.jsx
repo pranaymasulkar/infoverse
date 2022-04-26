@@ -11,7 +11,6 @@ const ContactLocation = () => {
           src={iframe}
           width="100%"
           height="263"
-          allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         />

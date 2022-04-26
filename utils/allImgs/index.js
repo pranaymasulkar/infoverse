@@ -24,6 +24,18 @@ import AboutMission3 from "../../assets/img/core-img/ab-mission3.png";
 import OurMision from "../../assets/img/core-img/ourmision.png";
 import TeamMember1 from "../../assets/img/core-img/TeamMember1.png";
 import TeamMember2 from "../../assets/img/core-img/TeamMember2.png";
+import BuildingPlatform from "../../assets/img/core-img/about-building-platform.png";
+import SecurUserData from "../../assets/img/core-img/about-SecurUserData.png";
+import MostCreadibility from "../../assets/img/core-img/about-MostCreadibility.png";
+import BigDataInsights from "../../assets/img/core-img/about-BigDataInsights.png";
+
+
+import Portfolio1 from "../../assets/img/portfolio-img/portfolio1.png";
+import Portfolio2 from "../../assets/img/portfolio-img/portfolio2.png";
+import Portfolio3 from "../../assets/img/portfolio-img/portfolio3.png";
+import Portfolio4 from "../../assets/img/portfolio-img/portfolio4.png";
+import Portfolio5 from "../../assets/img/portfolio-img/portfolio5.png";
+import Portfolio6 from "../../assets/img/portfolio-img/portfolio6.png";
 
 export {
 
@@ -49,9 +61,18 @@ export {
 	AboutMission2,
 	AboutMission3,
 	OurMision,
+	BuildingPlatform,
 	TeamMember1,
 	TeamMember2,
+	SecurUserData,
+	MostCreadibility,
+	BigDataInsights,
 
-
+	Portfolio1,
+	Portfolio2,
+	Portfolio3,
+	Portfolio4,
+	Portfolio5,
+	Portfolio6,
 
 }

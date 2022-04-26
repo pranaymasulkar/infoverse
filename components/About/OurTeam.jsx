@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Col, Image } from "react-bootstrap";
-import { TeamMember1, TeamMember2, TeamMember3 } from "../../utils/allImgs";
+import { TeamMember1, TeamMember2 } from "../../utils/allImgs";
 
 const OurTeam = () => {
   const Team = [
@@ -23,7 +23,7 @@ const OurTeam = () => {
         <Col md={4} key={Team.id}>
           <Card className="border-0">
             <Card.Body className="p-0">
-              <Image src={Team.Img.src} className="img-fluid"/>
+              <Image src={Team.Img.src} className="img-fluid" alt=""/>
             </Card.Body>
           </Card>
         </Col>

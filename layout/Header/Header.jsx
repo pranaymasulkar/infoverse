@@ -52,6 +52,13 @@ function Header({Title}){
                             </Link>
                         </li>
                         <li className="nav-item">
+                            <Link href="/Portfolio">
+                                <a className="nav-link">
+                                Portfolio
+                                </a>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
                             <Link href="/Contact">
                                 <a className="nav-link">
                                 Contact

@@ -40,7 +40,7 @@ const Home = () => {
               <Button variant="outline-info">Learn More</Button>
             </Col>
             <Col>
-              <Image src={Slider1.src} className="img-fluid" />
+              <Image src={Slider1.src} className="img-fluid" alt=""/>
             </Col>
           </Row>
         </Container>
@@ -73,7 +73,7 @@ const Home = () => {
           <Container>
             <Row>
               <Col>
-                <Image src={Slider1.src} className="img-fluid" />
+                <Image src={Slider1.src} className="img-fluid" alt=""/>
               </Col>
               <Col>
                 <h2 className="white">Shift to Blockchain Revolution</h2>
@@ -115,7 +115,7 @@ const Home = () => {
               <Button variant="outline-info">Learn More</Button>
             </Col>
             <Col>
-              <Image src={artificial.src} className="img-fluid" />
+              <Image src={artificial.src} className="img-fluid" alt=""/>
             </Col>
           </Row>
         </Container>
@@ -157,7 +157,7 @@ const Home = () => {
             <Col md={3}>
               <Card className="info-home-servetech-card border-0 shadow white text-center">
                 <Card.Body className="py-5">
-                  <Image src={WebDevelopment.src} className="img-fluid" />
+                  <Image src={WebDevelopment.src} className="img-fluid" alt=""/>
                   <Card.Title className="mt-4">Web Development</Card.Title>
                 </Card.Body>
               </Card>
@@ -165,7 +165,7 @@ const Home = () => {
             <Col md={3}>
               <Card className="info-home-servetech-card border-0 shadow white text-center">
                 <Card.Body className="py-5">
-                  <Image src={MobileAppDevelopment.src} className="img-fluid" />
+                  <Image src={MobileAppDevelopment.src} className="img-fluid" alt=""/>
                   <Card.Title className="mt-4">
                     Mobile App Development
                   </Card.Title>
@@ -175,7 +175,7 @@ const Home = () => {
             <Col md={3}>
               <Card className="info-home-servetech-card border-0 shadow white text-center">
                 <Card.Body className="py-5">
-                  <Image src={SoftwareDevelopment.src} className="img-fluid" />
+                  <Image src={SoftwareDevelopment.src} className="img-fluid" alt=""/>
                   <Card.Title className="mt-4">Software Development</Card.Title>
                 </Card.Body>
               </Card>
@@ -183,7 +183,7 @@ const Home = () => {
             <Col md={3}>
               <Card className="info-home-servetech-card border-0 shadow white text-center">
                 <Card.Body className="py-5">
-                  <Image src={uiuxDesigning.src} className="img-fluid" />
+                  <Image src={uiuxDesigning.src} className="img-fluid" alt=""/>
                   <Card.Title className="mt-4">UI/UX Designing</Card.Title>
                 </Card.Body>
               </Card>
@@ -221,7 +221,7 @@ const Home = () => {
                       </Card.Title>
                     </div>
                     <div>
-                      <Image src={blog1.src} className="img-fluid" />
+                      <Image src={blog1.src} className="img-fluid" alt=""/>
                     </div>
                   </div>
                 </Card.Body>
@@ -243,7 +243,7 @@ const Home = () => {
                       </Card.Title>
                     </div>
                     <div>
-                      <Image src={blog2.src} className="img-fluid" />
+                      <Image src={blog2.src} className="img-fluid" alt=""/>
                     </div>
                   </div>
                 </Card.Body>
@@ -254,7 +254,7 @@ const Home = () => {
                 <Card.Body className="p-0">
                   <div className="d-flex justify-content-between align-items-center">
                     <div>
-                      <Image src={blog3.src} className="img-fluid" />
+                      <Image src={blog3.src} className="img-fluid" alt=""/>
                     </div>
                     <div className="w-50 m-3">
                       <Card.Title className="">
@@ -276,7 +276,7 @@ const Home = () => {
                 <Card.Body className="p-0">
                   <div className="d-flex justify-content-between align-items-center">
                     <div>
-                      <Image src={blog4.src} className="img-fluid" />
+                      <Image src={blog4.src} className="img-fluid" alt=""/>
                     </div>
                     <div className="w-50 m-3">
                       <Card.Title className="">

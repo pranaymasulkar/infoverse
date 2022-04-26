@@ -13,7 +13,7 @@ const Footer = (props) => {
       <Container>
         <Row className="border-bottom pb-5">
           <Col md={3}>
-            <Image src={NavbarLogo.src} className="img-fluid" />
+            <Image src={NavbarLogo.src} className="img-fluid" alt=""/>
           </Col>
           <Col md={3}>
             <div>
