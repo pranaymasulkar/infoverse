@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Col, Row, Container } from "react-bootstrap";
+import { Image, Col, Row, Container, Button } from "react-bootstrap";
 import {
   Portfolio1,
   Portfolio2,
@@ -13,37 +13,37 @@ const PortfolioGrid = () => {
   const Portfolios = [
     {
       PortImg: Portfolio1,
-      Title: "Pranay",
+      Title: "Dinámica Patterns",
       Link: "",
       Description: "lorem ipsun",
     },
     {
       PortImg: Portfolio2,
-      Title: "Pranay Masulkar",
+      Title: "Scratch Mobile App",
       Link: "",
       Description: "lorem ipsun",
     },
     {
       PortImg: Portfolio3,
-      Title: "Pranay Masulkar",
+      Title: "Automated Machine",
       Link: "",
       Description: "lorem ipsun",
     },
     {
       PortImg: Portfolio4,
-      Title: "Pranay Masulkar",
+      Title: "Lactica Sweet Break",
       Link: "",
       Description: "lorem ipsun",
     },
     {
       PortImg: Portfolio5,
-      Title: "Pranay Masulkar",
+      Title: "Spacing it Easier",
       Link: "",
       Description: "lorem ipsun",
     },
     {
       PortImg: Portfolio6,
-      Title: "Pranay Masulkar",
+      Title: "Badalona Diseño",
       Link: "",
       Description: "lorem ipsun",
     },
@@ -51,7 +51,7 @@ const PortfolioGrid = () => {
 
   return (
     <div>
-      <section className="testimonal-section">
+      <section className="portfolio-grid-gallery">
         <Container className="container">
           <Row className="py-5">
             <Col xs={12} md={8} className="text-start">
@@ -63,24 +63,28 @@ const PortfolioGrid = () => {
               </h5>
             </Col>
           </Row>
-          <Row className="">
-            <Col className="testi-blog-sec">
+          <Row>
+            <Col className="portfolio-blog-sec">
               <div className="grid">
                 {Portfolios.map((Portfolio) => (
-                  <div
-                  key={Portfolio.id}
-                    className="grid-item"
-                    title=""
-                    // style={{backgroundImage: `url(../assets//img/portfolio-img/${Portfolio.PortImg})`}}
-                  >
-                    <Image src={Portfolio.PortImg.src} className="img-fluid" alt=""/>
-                    <a href="#"></a>
-                    <div className="testi-title-wrapper">
-                      <div className="imcaptionb">
-                        <h3 className="m-0">{Portfolio.Title}</h3>
+                  <div class="grid-item" key={Portfolio.id}>
+                    <figure class="effect-milo">
+                      <Image src={Portfolio.PortImg.src} alt={Portfolio.Title} />
+                      <figcaption>
+                        {/* <h2>{Portfolio.Title} <span>{Portfolio.Title}</span></h2> */}
+                        <h2>
+                          <span>{Portfolio.Title}</span>
+                        </h2>
                         <p>{Portfolio.Description}</p>
-                      </div>
-                    </div>
+                        {/* <a
+                          href={Portfolio.Link}
+                          className="mainlink"
+                        >
+                          lern more
+                        </a> */}
+                        <a href={Portfolio.Link} className="btn btn-outline-light portbtn">Visit Site</a>{' '}
+                      </figcaption>
+                    </figure>
                   </div>
                 ))}
                 ;

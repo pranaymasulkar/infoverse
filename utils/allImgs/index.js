@@ -30,6 +30,7 @@ import MostCreadibility from "../../assets/img/core-img/about-MostCreadibility.p
 import BigDataInsights from "../../assets/img/core-img/about-BigDataInsights.png";
 
 
+import PortfolioBannerImg from "../../assets/img/portfolio-img/portfolio-banner.png";
 import Portfolio1 from "../../assets/img/portfolio-img/portfolio1.png";
 import Portfolio2 from "../../assets/img/portfolio-img/portfolio2.png";
 import Portfolio3 from "../../assets/img/portfolio-img/portfolio3.png";
@@ -68,6 +69,7 @@ export {
 	MostCreadibility,
 	BigDataInsights,
 
+	PortfolioBannerImg,
 	Portfolio1,
 	Portfolio2,
 	Portfolio3,
