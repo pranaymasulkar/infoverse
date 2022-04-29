@@ -67,8 +67,8 @@ const PortfolioGrid = () => {
             <Col className="portfolio-blog-sec">
               <div className="grid">
                 {Portfolios.map((Portfolio) => (
-                  <div class="grid-item" key={Portfolio.id}>
-                    <figure class="effect-milo">
+                  <div className="grid-item" key={Portfolio.id}>
+                    <figure className="effect-milo">
                       <Image src={Portfolio.PortImg.src} alt={Portfolio.Title} />
                       <figcaption>
                         {/* <h2>{Portfolio.Title} <span>{Portfolio.Title}</span></h2> */}

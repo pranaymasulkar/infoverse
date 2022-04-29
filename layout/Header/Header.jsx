@@ -45,6 +45,20 @@ function Header({Title}){
                 <div className="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
+                            <Link href="/Clientel">
+                                <a className="nav-link">
+                                Clientel
+                                </a>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link href="/Blockchain">
+                                <a className="nav-link">
+                                Blockchain
+                                </a>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
                             <Link href="/About">
                                 <a className="nav-link">
                                 About

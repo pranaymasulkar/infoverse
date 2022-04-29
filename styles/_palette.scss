@@ -3,7 +3,7 @@ html {
   --color-white: #ffffff;
   --color-blue-zodiac: #0C1235;
   --color-bunting: #131A46;
-
+  --color-gold: #FF9F00;
 
 
 
@@ -38,10 +38,12 @@ html.transition *:after {
 .black {
   color: var(--color-black);
 }
-.grey-color {
+.grey-c {
   color: var(--color-grey-mode);
 }
-
+.gold-c {
+  color: var(--color-gold);
+}
 
 .mainbg {
   background-color: var(--color-blue-zodiac);

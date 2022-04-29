@@ -16,6 +16,9 @@ import {
 } from "../utils/allImgs";
 import { Container, Row, Col, Button, Image, Card } from "react-bootstrap";
 import Footer from "../layout/Footer/Footer";
+import HeroContainerOne from "../containers/HeroContainers/HeroContainerOne";
+import HeroContainerTwo from "../containers/HeroContainers/HeroContainerTwo";
+import HeroContainerThree from "../containers/HeroContainers/HeroContainerThree";
 
 const Header = dynamic(
   () => {
@@ -27,23 +30,16 @@ const Header = dynamic(
 const Home = () => {
   return (
     <>
-      <Header/>
-      <section className="info-hero py-5">
-        <Container>
-          <Row className="d-flex justify-content-center align-items-center py-5">
-            <Col>
-              <h1>Embrace Web 3. Embrace Transformation.</h1>
-              <p className="white">
-                Unearth the blockchain potential to overhaul enterprise &
-                institutional processes.
-              </p>
-              <Button variant="outline-info">Learn More</Button>
-            </Col>
-            <Col>
-              <Image src={Slider1.src} className="img-fluid" alt=""/>
-            </Col>
-          </Row>
-        </Container>
+      <Header />
+      <section className="info-hero">
+      <HeroContainerOne
+        Title="Embrace Web 3. Embrace Transformation."
+        SubTitle="Unearth the blockchain potential to overhaul enterprise &
+        institutional processes."
+        BtnTitle="Learn More"
+        BtnLink="#"
+        Heroimg={Slider1}
+      />
       </section>
       <section className="info-home-about-combine py-5">
         <section className="info-home-about py-5">
@@ -69,57 +65,47 @@ const Home = () => {
             </Row>
           </Container>
         </section>
-        <section className="py-5">
-          <Container>
-            <Row>
-              <Col>
-                <Image src={Slider1.src} className="img-fluid" alt=""/>
-              </Col>
-              <Col>
-                <h2 className="white">Shift to Blockchain Revolution</h2>
-                <h5 className="white">
-                  Taste the flavor of shared economy with our enterprise
-                  blockchain solutions.
-                </h5>
-                <p className="white">
-                  Antier – a leading blockchain development company – harnesses
-                  the power of blockchain and other technologies like
-                  distributed ledger and smart contracts to build scalable,
-                  asset agnostic applications such as white label exchange
-                  platforms (centralized, decentralized and P2P), smart wallets,
-                  ICO, STO, tokens and other enterprise blockchain solutions
-                  development. Our experts follow design thinking-driven
-                  approach to identify blockchain use cases and create
-                  intelligent strategies around the same to accelerate your
-                  deployments. Together, we are decentralizing the world by
-                  combining our deep domain expertise and rich experience to
-                  deliver blockchain solutions at enterprise scale.
-                </p>
-                <Button variant="outline-info">Learn More</Button>
-              </Col>
-            </Row>
-          </Container>
-        </section>
+        <HeroContainerThree
+          Title="Shift to Blockchain Revolution"
+          TitleClass=""
+          TextColor="white"
+          SubTitle="Taste the flavor of shared economy with our enterprise
+          blockchain solutions."
+          SubTitleClass=""
+          Discription="Antier – a leading blockchain development company – harnesses
+          the power of blockchain and other technologies like
+          distributed ledger and smart contracts to build scalable,
+          asset agnostic applications such as white label exchange
+          platforms (centralized, decentralized and P2P), smart wallets,
+          ICO, STO, tokens and other enterprise blockchain solutions
+          development. Our experts follow design thinking-driven
+          approach to identify blockchain use cases and create
+          intelligent strategies around the same to accelerate your
+          deployments. Together, we are decentralizing the world by
+          combining our deep domain expertise and rich experience to
+          deliver blockchain solutions at enterprise scale."
+          DiscriptionClass=""
+          BtnTitle="Learn More"
+          BtnLink="#"
+          BtnClass="btn btn-outline-info"
+          Heroimg={Slider1}
+        />
       </section>
 
-      <section className="info-home-ai py-5">
-        <Container>
-          <Row className="d-flex justify-content-center align-items-center">
-            <Col>
-              <h2>The Best AI For Everyone</h2>
-              <p>
-                Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                commodo consequat.
-              </p>
-              <Button variant="outline-info">Learn More</Button>
-            </Col>
-            <Col>
-              <Image src={artificial.src} className="img-fluid" alt=""/>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <HeroContainerTwo
+        Title="The Best AI For Everyone"
+        TitleClass=""
+        TextColor="black"
+        SubTitle=""
+        SubTitleClass="d-none"
+        Discription="Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                  tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+        DiscriptionClass=""
+        BtnTitle="Learn More"
+        BtnLink="#"
+        BtnClass="btn btn-outline-info"
+        Heroimg={artificial}
+      />
       <section className="info-home-spacetech">
         <Container fluid>
           <Row className="d-flex justify-content-end align-items-center">
@@ -157,7 +143,11 @@ const Home = () => {
             <Col md={3}>
               <Card className="info-home-servetech-card border-0 shadow white text-center">
                 <Card.Body className="py-5">
-                  <Image src={WebDevelopment.src} className="img-fluid" alt=""/>
+                  <Image
+                    src={WebDevelopment.src}
+                    className="img-fluid"
+                    alt=""
+                  />
                   <Card.Title className="mt-4">Web Development</Card.Title>
                 </Card.Body>
               </Card>
@@ -165,7 +155,11 @@ const Home = () => {
             <Col md={3}>
               <Card className="info-home-servetech-card border-0 shadow white text-center">
                 <Card.Body className="py-5">
-                  <Image src={MobileAppDevelopment.src} className="img-fluid" alt=""/>
+                  <Image
+                    src={MobileAppDevelopment.src}
+                    className="img-fluid"
+                    alt=""
+                  />
                   <Card.Title className="mt-4">
                     Mobile App Development
                   </Card.Title>
@@ -175,7 +169,11 @@ const Home = () => {
             <Col md={3}>
               <Card className="info-home-servetech-card border-0 shadow white text-center">
                 <Card.Body className="py-5">
-                  <Image src={SoftwareDevelopment.src} className="img-fluid" alt=""/>
+                  <Image
+                    src={SoftwareDevelopment.src}
+                    className="img-fluid"
+                    alt=""
+                  />
                   <Card.Title className="mt-4">Software Development</Card.Title>
                 </Card.Body>
               </Card>
@@ -183,7 +181,7 @@ const Home = () => {
             <Col md={3}>
               <Card className="info-home-servetech-card border-0 shadow white text-center">
                 <Card.Body className="py-5">
-                  <Image src={uiuxDesigning.src} className="img-fluid" alt=""/>
+                  <Image src={uiuxDesigning.src} className="img-fluid" alt="" />
                   <Card.Title className="mt-4">UI/UX Designing</Card.Title>
                 </Card.Body>
               </Card>
@@ -221,7 +219,7 @@ const Home = () => {
                       </Card.Title>
                     </div>
                     <div>
-                      <Image src={blog1.src} className="img-fluid" alt=""/>
+                      <Image src={blog1.src} className="img-fluid" alt="" />
                     </div>
                   </div>
                 </Card.Body>
@@ -243,7 +241,7 @@ const Home = () => {
                       </Card.Title>
                     </div>
                     <div>
-                      <Image src={blog2.src} className="img-fluid" alt=""/>
+                      <Image src={blog2.src} className="img-fluid" alt="" />
                     </div>
                   </div>
                 </Card.Body>
@@ -254,7 +252,7 @@ const Home = () => {
                 <Card.Body className="p-0">
                   <div className="d-flex justify-content-between align-items-center">
                     <div>
-                      <Image src={blog3.src} className="img-fluid" alt=""/>
+                      <Image src={blog3.src} className="img-fluid" alt="" />
                     </div>
                     <div className="w-50 m-3">
                       <Card.Title className="">
@@ -276,7 +274,7 @@ const Home = () => {
                 <Card.Body className="p-0">
                   <div className="d-flex justify-content-between align-items-center">
                     <div>
-                      <Image src={blog4.src} className="img-fluid" alt=""/>
+                      <Image src={blog4.src} className="img-fluid" alt="" />
                     </div>
                     <div className="w-50 m-3">
                       <Card.Title className="">

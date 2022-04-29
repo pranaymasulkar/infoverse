@@ -3,14 +3,18 @@
 // Home Slider
 
 .info-hero {
-  background-image: linear-gradient(
-    to right bottom,
-    #02082a,
-    #011139,
-    #011139,
-    #031749,
-    #0a1b59
-  );
+  // background-image: linear-gradient(
+  //   to right bottom,
+  //   #02082a,
+  //   #011139,
+  //   #011139,
+  //   #031749,
+  //   #0a1b59
+  // );
+  background-image: url(../assets/img/core-img/mainbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 // About Section
@@ -68,4 +72,19 @@
 
 .porfolio-bannersec {
   margin-top: -15%;
+}
+
+.client-proflie {
+  min-height: 200px;
+  border-color: var(--color-white);
+  background-color: var(--color-blue-zodiac);
+}
+
+.testimonicard {
+  background-color: var(--color-blue-zodiac);
+  color: var(--color-white);
+  background-image: url(../assets/img/core-img/texticote.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: auto;
 }

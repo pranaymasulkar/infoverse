@@ -7,7 +7,7 @@ const PortfolioBanner = () => {
         <Container>
             <Row>
                 <Col className="text-center">
-                <Image src={PortfolioBannerImg.src} className="img-fluid"/>
+                <Image src={PortfolioBannerImg.src} className="img-fluid" alt=''/>
                 </Col>
             </Row>
         </Container>
