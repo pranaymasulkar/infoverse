@@ -42,7 +42,7 @@ const TestimoniCard = () => {
                             <h5>{Testimoni.Title}</h5>
                             <p>{Testimoni.Designation}</p>
                         </div>
-                        <Image src={Testimoni.Avtar.src} className="img-fluid"/>
+                        <Image src={Testimoni.Avtar.src} className="img-fluid" alt={Testimoni.Title}/>
                     </div>
                 </Card.Body>
             </Card>

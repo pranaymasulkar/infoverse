@@ -52,7 +52,7 @@ const ClientProfile = () => {
         <Col md={3} key={Client.id}>
           <Card className="client-proflie mb-4">
             <Card.Body className="d-flex justify-content-center align-items-center">
-              <Image src={Client.Logo.src} className="img-fluid" />
+              <Image src={Client.Logo.src} className="img-fluid" alt={Title}/>
             </Card.Body>
           </Card>
         </Col>

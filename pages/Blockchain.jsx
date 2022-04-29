@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import React from "react";
 import Footer from "../layout/Footer/Footer";
-import { Card, Col, Container, Image, Row } from "react-bootstrap";
+import { Col, Container, Image, Row } from "react-bootstrap";
 import HeroContainerOne from "../containers/HeroContainers/HeroContainerOne";
 import { BlockchinHero1, BlockchinHero2 } from "../utils/allImgs";
 import BlockCategory from "../components/Blockchain/BlockCategory/BlockCategory";
@@ -21,8 +21,7 @@ const Blockchain = () => {
       <section className="info-hero">
         <HeroContainerOne
           Title="Decentralizing The World"
-          SubTitle="Since 2016 Through Forward-Thinking Enterprise
-        Blockchain Solutions"
+          SubTitle="Since 2016 Through Forward-Thinking Enterprise Blockchain Solutions"
           BtnTitle="Learn More"
           BtnLink="#"
           Heroimg={BlockchinHero1}
@@ -43,7 +42,7 @@ const Blockchain = () => {
               <Col xs={12} md={5} className="pe-5">
                 <div className="pe-5">
                   <h5>
-                    Unearth the blockchain potential to overhaul enterprise &
+                    Unearth the blockchain potential to overhaul enterprise and
                     institutional processes.
                   </h5>
                   <p>
@@ -51,12 +50,12 @@ const Blockchain = () => {
                     company harnesses the power of decentralization and smart
                     contracts to build scalable, asset agnostic applications.
                     Our subject matter experts provide enterprise-grade
-                    blockchain app development services ensuring transparency &
-                    immutability over a distributed ledger.
+                    blockchain app development services ensuring transparency
+                    and immutability over a distributed ledger.
                   </p>
                   <p>
                     Ask more about our expertise in DeFi 2.0, Metaverse
-                    ecosystems, DAOs, Exchanges & wallets, crypto banks, NFTs
+                    ecosystems, DAOs, Exchanges and wallets, crypto banks, NFTs
                     and more.
                   </p>
                 </div>
@@ -65,8 +64,8 @@ const Blockchain = () => {
           </Container>
         </section>
       </section>
-      <BlockCategory/>
-      <ClientProfile/>
+      <BlockCategory />
+      <ClientProfile />
       <Footer />
     </>
   );
