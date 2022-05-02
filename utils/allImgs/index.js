@@ -53,6 +53,9 @@ import Testimoni1 from "../../assets/img/testi-img/testi1.png";
 import BlockchinHero1 from "../../assets/img/core-img/bchero1.png";
 import BlockchinHero2 from "../../assets/img/core-img/bchero2.png";
 
+import AiTechBaner from "../../assets/img/core-img/aitech.png";
+import Aiserve from "../../assets/img/core-img/aiserve.png";
+
 export {
 
 
@@ -105,5 +108,8 @@ export {
 
 	BlockchinHero1,
 	BlockchinHero2,
+
+	AiTechBaner,
+	Aiserve,
 	
 }

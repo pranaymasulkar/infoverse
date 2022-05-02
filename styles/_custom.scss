@@ -88,3 +88,10 @@
   background-repeat: no-repeat;
   background-size: auto;
 }
+
+.aiplatform-arti {
+  // background-image: url(../assets/img/core-img/aiplatbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: var(--color-blue-zodiac) url(../assets/img/core-img/aiplatbg.png) center center no-repeat;
+}

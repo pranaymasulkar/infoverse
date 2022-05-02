@@ -65,7 +65,11 @@ const Blockchain = () => {
         </section>
       </section>
       <BlockCategory />
-      <ClientProfile />
+      <ClientProfile
+        Classes="white text-start py-5"
+        Title="Our Blockchain Tech Expertise"
+        SubTitle="We harness the potential of varied Blockchain platforms to deliver innovative enterprise grade blockchain solutions that make a difference."
+      />
       <Footer />
     </>
   );

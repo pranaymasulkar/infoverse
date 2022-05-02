@@ -1,15 +1,16 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import ClientCard from "../ClientProfile/ClientCard";
 
-const ClientProfile = () => {
+const ClientProfile = ({ Classes, Title, SubTitle }) => {
   return (
     <section className="mainbg py-5">
       <Container>
         <Row>
-          <h2 className="white">
-          Clients
-          </h2>
+          <Col className={Classes}>
+            <h2>{Title}</h2>
+            <p>{SubTitle}</p>
+          </Col>
         </Row>
         <Row>
           <ClientCard />

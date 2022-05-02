@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import React from "react";
 import ClientProfile from "../components/Clientel/ClientProfile/ClientProfile";
 import Footer from "../layout/Footer/Footer";
-import { Card, Col, Container, Image, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Testimoni from "../components/Testimonials/Testimoni";
 import Faq from "../components/Faqs/Faq";
 
@@ -33,9 +33,13 @@ const Clientel = () => {
           </Row>
         </Container>
       </section>
-      <ClientProfile/>
-      <Testimoni/>
-      <Faq/>
+      <ClientProfile
+        Classes="white text-start py-5"
+        Title="Clients"
+        SubTitle=""
+      />
+      <Testimoni />
+      <Faq />
       <Footer />
     </>
   );
