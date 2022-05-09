@@ -1,5 +1,10 @@
 @import "layout";
+body {
+  font-size: var(--font-size-base);
+}
 
+.hero-contin-one {
+}
 // Home Slider
 
 .info-hero {
@@ -34,7 +39,14 @@
   background-repeat: no-repeat;
   color: white;
 }
-
+.info-blog-sec {
+  .card {
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      box-shadow: 0px 0px 15px -10px var(--color-main);
+    }
+  }
+}
 // Artificial Inteligence
 .info-home-ai {
 }
@@ -48,13 +60,18 @@
   }
 }
 
-
 .info-home-servetech {
-
 }
 
 .info-home-servetech-card {
-  background-image: linear-gradient(to bottom, #41bff9, #00a6fe, #008bff, #006cf9, #1446e9);
+  background-image: linear-gradient(
+    to bottom,
+    #41bff9,
+    #00a6fe,
+    #008bff,
+    #006cf9,
+    #1446e9
+  );
 }
 
 // About Us Page
@@ -93,5 +110,6 @@
   // background-image: url(../assets/img/core-img/aiplatbg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background: var(--color-blue-zodiac) url(../assets/img/core-img/aiplatbg.png) center center no-repeat;
+  background: var(--color-blue-zodiac) url(../assets/img/core-img/aiplatbg.png)
+    center center no-repeat;
 }

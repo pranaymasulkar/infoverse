@@ -24,11 +24,9 @@ const HeroContainerThree = ({
             </Col>
             <Col className={TextColor}>
               <h2 className={TitleClass}>{Title}</h2>
-              <h5 className={SubTitleClass}>{SubTitle}</h5>
-              <p className={DiscriptionClass}>{Discription}</p>
-              <a href={BtnLink} className={BtnClass}>
-                {BtnTitle}
-              </a>
+              <h5 className="fs-20 fw-medium my-3">{SubTitle}</h5>
+              <p className="fs-16 fw-medium mb-3">{Discription}</p>
+              <a href={BtnLink} className={BtnClass} data-back={BtnTitle} data-front={BtnTitle}></a>
             </Col>
           </Row>
         </Container>

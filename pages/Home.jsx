@@ -1,7 +1,4 @@
 import dynamic from "next/dynamic";
-// import Header from '../layouts/Header';
-// import Footer from '../layouts/Footer';
-// import '../assets/css/HomeDemo2.css'
 import {
   Slider1,
   artificial,
@@ -9,16 +6,14 @@ import {
   SoftwareDevelopment,
   uiuxDesigning,
   WebDevelopment,
-  blog1,
-  blog2,
-  blog3,
-  blog4,
 } from "../utils/allImgs";
-import { Container, Row, Col, Button, Image, Card } from "react-bootstrap";
+import { Container, Row, Col, Image, Card } from "react-bootstrap";
 import Footer from "../layout/Footer/Footer";
 import HeroContainerOne from "../containers/HeroContainers/HeroContainerOne";
 import HeroContainerTwo from "../containers/HeroContainers/HeroContainerTwo";
 import HeroContainerThree from "../containers/HeroContainers/HeroContainerThree";
+import SpaceTech from "../components/Home/SpaceTech";
+import Blog from '../containers/Blog';
 
 const Header = dynamic(
   () => {
@@ -32,26 +27,26 @@ const Home = () => {
     <>
       <Header />
       <section className="info-hero">
-      <HeroContainerOne
-        Title="Embrace Web 3. Embrace Transformation."
-        SubTitle="Unearth the blockchain potential to overhaul enterprise &
+        <HeroContainerOne
+          Title="Embrace Web 3. Embrace Transformation."
+          SubTitle="Unearth the blockchain potential to overhaul enterprise &
         institutional processes."
-        BtnTitle="Learn More"
-        BtnLink="#"
-        Heroimg={Slider1}
-      />
+          BtnTitle="Learn More"
+          BtnLink="#"
+          Heroimg={Slider1}
+        />
       </section>
       <section className="info-home-about-combine py-5">
         <section className="info-home-about py-5">
           <Container>
             <Row className="d-flex justify-content-center align-items-center py-5">
               <Col>
-                <h2 className="white">
+                <h2 className="main-Heading-white fw-bold display-6">
                   About us and our love for our work and job.
                 </h2>
               </Col>
               <Col>
-                <p className="white">
+                <p className="white fs-16 fw-regular">
                   Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
                   exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
                   ea commodo consequat. Duis autem vel eum iriure dolor in
@@ -61,17 +56,22 @@ const Home = () => {
                   zzril delenit augue duis dolore te feugait nulla facilisi. Nam
                   liber tempor cum
                 </p>
+                <a
+                  href="#"
+                  className="text-decoration-none text-capitalize white fw-bold"
+                >
+                  read more
+                </a>
               </Col>
             </Row>
           </Container>
         </section>
         <HeroContainerThree
-          Title="Shift to Blockchain Revolution"
-          TitleClass=""
           TextColor="white"
+          TitleClass="main-Heading-white fw-bold display-6"
+          Title="Shift to Blockchain Revolution"
           SubTitle="Taste the flavor of shared economy with our enterprise
           blockchain solutions."
-          SubTitleClass=""
           Discription="Antier – a leading blockchain development company – harnesses
           the power of blockchain and other technologies like
           distributed ledger and smart contracts to build scalable,
@@ -84,59 +84,36 @@ const Home = () => {
           deployments. Together, we are decentralizing the world by
           combining our deep domain expertise and rich experience to
           deliver blockchain solutions at enterprise scale."
-          DiscriptionClass=""
           BtnTitle="Learn More"
           BtnLink="#"
-          BtnClass="btn btn-outline-info"
+          BtnClass="btn-flip"
           Heroimg={Slider1}
         />
       </section>
 
       <HeroContainerTwo
         Title="The Best AI For Everyone"
-        TitleClass=""
+        TitleClass="main-Heading-blue fw-bold display-6"
         TextColor="black"
         SubTitle=""
         SubTitleClass="d-none"
         Discription="Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
                   tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
-        DiscriptionClass=""
+        DiscriptionClass="color-code-grey fs-16 fw-medium"
         BtnTitle="Learn More"
         BtnLink="#"
-        BtnClass="btn btn-outline-info"
+        BtnClass="btn btn-outline-info my-3"
         Heroimg={artificial}
       />
-      <section className="info-home-spacetech">
-        <Container fluid>
-          <Row className="d-flex justify-content-end align-items-center">
-            <Col md={6} className="info-home-space-detail py-5">
-              <div className="p-5 my-5">
-                <h2 className="white mb-5">
-                  We connect the impossible Space Technology
-                </h2>
-                <h5 className="white">
-                  Taste the flavor of shared economy with our enterprise
-                  blockchain solutions.
-                </h5>
-                <p className="white">
-                  Antier – a leading blockchain development company – harnesses
-                  the power of blockchain and other technologies like
-                  distributed ledger and smart contracts to build scalable,
-                  asset agnostic applications such as white label exchange
-                  platforms (centralized, decentralized and P2P).
-                </p>
-                <Button variant="outline-info">Learn More</Button>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <SpaceTech />
 
       <section className="info-home-servetech py-5">
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
-            <Col className="text-center pb-5">
-              <h2>We can help you in every digital way possible</h2>
+            <Col xs={12} md={5} className="text-center pb-5">
+              <h2 className="main-Heading-blue fw-bold display-6">
+                We can help you in every digital way possible
+              </h2>
             </Col>
           </Row>
           <Row className="d-flex justify-content-center align-items-center">
@@ -189,111 +166,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-
-      <section className="info-home-servetech py-5">
-        <Container>
-          <Row className="d-flex justify-content-center align-items-center">
-            <Col className="text-center pb-5">
-              <h2>Recent Blog Post</h2>
-              <p>
-                Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                commodo consequat.
-              </p>
-            </Col>
-          </Row>
-          <Row className="d-flex justify-content-between align-items-center">
-            <Col md={6}>
-              <Card className="mb-4">
-                <Card.Body className="p-0">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <div className="w-50 m-3">
-                      <Card.Title className="">
-                        Typical Process of Successful Mobile Development
-                      </Card.Title>
-                      <Card.Title className="mt-4">
-                        Create an immutable master ledger between trading
-                        parties; use smart contracts to eliminate bad invoices;
-                        have a single system of record that is accessible to all
-                        partners involved in a transaction.
-                      </Card.Title>
-                    </div>
-                    <div>
-                      <Image src={blog1.src} className="img-fluid" alt="" />
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6}>
-              <Card className="mb-4">
-                <Card.Body className="p-0">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <div className="w-50 m-3">
-                      <Card.Title className="">
-                        Typical Process of Successful Mobile Development
-                      </Card.Title>
-                      <Card.Title className="mt-4">
-                        Create an immutable master ledger between trading
-                        parties; use smart contracts to eliminate bad invoices;
-                        have a single system of record that is accessible to all
-                        partners involved in a transaction.
-                      </Card.Title>
-                    </div>
-                    <div>
-                      <Image src={blog2.src} className="img-fluid" alt="" />
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6}>
-              <Card className="mb-4">
-                <Card.Body className="p-0">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <div>
-                      <Image src={blog3.src} className="img-fluid" alt="" />
-                    </div>
-                    <div className="w-50 m-3">
-                      <Card.Title className="">
-                        Typical Process of Successful Mobile Development
-                      </Card.Title>
-                      <Card.Title className="mt-4">
-                        Create an immutable master ledger between trading
-                        parties; use smart contracts to eliminate bad invoices;
-                        have a single system of record that is accessible to all
-                        partners involved in a transaction.
-                      </Card.Title>
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6}>
-              <Card className="mb-4">
-                <Card.Body className="p-0">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <div>
-                      <Image src={blog4.src} className="img-fluid" alt="" />
-                    </div>
-                    <div className="w-50 m-3">
-                      <Card.Title className="">
-                        Typical Process of Successful Mobile Development
-                      </Card.Title>
-                      <Card.Title className="mt-4">
-                        Create an immutable master ledger between trading
-                        parties; use smart contracts to eliminate bad invoices;
-                        have a single system of record that is accessible to all
-                        partners involved in a transaction.
-                      </Card.Title>
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <Blog />
 
       <Footer />
     </>
