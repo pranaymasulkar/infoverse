@@ -1,33 +1,24 @@
 import React from "react";
-import { Card, Col, Image } from "react-bootstrap";
-import { TeamMember1, TeamMember2 } from "../../utils/allImgs";
+import { Col, Container, Row, Image } from "react-bootstrap";
+import OurTeamCard from "./OurTeamCard";
+
 
 const OurTeam = () => {
-  const Team = [
-    {
-      Title: "Pranay Masulkar",
-      Img: TeamMember1,
-    },
-    {
-      Title: "Pranay Masulkar",
-      Img: TeamMember2,
-    },
-    {
-      Title: "Pranay Masulkar",
-      Img: TeamMember1,
-    },
-  ];
   return (
     <>
-      {Team.map((Team) => (
-        <Col md={4} key={Team.id}>
-          <Card className="border-0">
-            <Card.Body className="p-0">
-              <Image src={Team.Img.src} className="img-fluid" alt=""/>
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
+      <section className=" py-5">
+        <Container>
+          <Row className="d-flex justify-content-start">
+            <Col md={6}>
+              <h5 className="fs-22 fw-semibold text-uppercase color-code-grey">OUR TEAM</h5>
+              <h2 className="main-Heading-blue fw-bold display-6">Meet our company experts</h2>
+            </Col>
+          </Row>
+          <Row className="pt-5 d-flex justify-content-center align-items-center">
+            <OurTeamCard/>
+          </Row>
+        </Container>
+      </section>
     </>
   );
 };

@@ -21,10 +21,10 @@ const Counters = () => {
     <>
       {Counter.map((Counter) => (
         <Col md={4} key={Counter.id}>
-          <Card className="iab-counter text-center">
+          <Card className="iab-counter text-center border-0 mb-3">
             <Card.Body>
-              <h2 className="white my-3 text-uppercase">{Counter.Count}</h2>
-              <Card.Text className="white text-capitalize">{Counter.Title}</Card.Text>
+              <h2 className="main-Heading-white fw-bold display-6 text-uppercase">{Counter.Count}</h2>
+              <Card.Text className="fs-22 fw-medium white text-capitalize">{Counter.Title}</Card.Text>
             </Card.Body>
           </Card>
         </Col>

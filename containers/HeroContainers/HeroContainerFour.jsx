@@ -9,7 +9,7 @@ const HeroContainerFour = ({ Title, TitleClass, TextColor, SubTitle, SubTitleCla
           <Row className="d-flex justify-content-center align-items-center py-5 text-center">
             <Col xs={12} md={7} className={TextColor}>
               <h1 className={TitleClass}>{Title}</h1>
-              <h5 className={SubTitleClass}>
+              <h5 className="fs-16 fw-semibold my-3">
               {SubTitle}
               </h5>
             </Col>

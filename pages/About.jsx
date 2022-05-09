@@ -27,22 +27,21 @@ const About = () => {
     <>
       <Header />
       <HeroContainerFour
-        TextColor="text-center py-5 mb-5"
+        TextColor="white text-center py-5 mb-5"
         Title="About our company"
-        TitleClass="vkkjkb"
+        TitleClass="main-Heading-white fw-bold display-6"
         SubTitle="Cryptocurrency markets have seen an increase in volume in recent weeks,  which is a great opportunity for new traders."
-        SubTitleClass="white"
         Heroimg= {AbouHero}
       />
       <section className=" py-5">
         <Container>
           <Row className="d-flex justify-content-center align-items-center py-5">
             <Col>
-              <h6>OUR MISSION</h6>
-              <h2>We are helping people to get a success.</h2>
+              <h6 className="fs-22 fw-semibold text-uppercase color-code-grey">OUR MISSION</h6>
+              <h2 className="main-Heading-blue fw-bold display-6">We are helping people to get a success.</h2>
             </Col>
             <Col>
-              <p>
+              <p className="fs-16 fw-semibold color-code-grey">
                 Invest in Bitcoin, Ethereum, USDT, and other cryptocurrencies
                 using our crypto trading app. The Bitcoin and cryptocurrency
                 markets have experienced a surge in volume recently, making it
@@ -68,8 +67,9 @@ const About = () => {
               <Image src={OurMision.src} className="img-fluid" alt="" />
             </Col>
             <Col md={6}>
-              <h2 className="white">Millions of users around the world</h2>
-              <p className="white">
+              <h6 className="fs-22 fw-semibold text-uppercase white">OUR VISIONS</h6>
+              <h2 className="main-Heading-white fw-bold display-6 my-3">Millions of users around the world</h2>
+              <p className="fs-16 fw-semibold white">
                 Invest in Bitcoin, Ethereum, USDT, and other cryptocurrencies
                 using our crypto trading app. The Bitcoin and cryptocurrency
                 markets have experienced a surge in volume recently, making it
@@ -84,23 +84,23 @@ const About = () => {
           </Row>
           <Row className="d-flex justify-content-center align-items-center py-5 mt-5">
             <Col md={6}>
-              <h5 className="white">Why Choose Us</h5>
-              <h2 className="white">
+              <h5 className="fs-22 fw-semibold text-uppercase white">Why Choose Us</h5>
+              <h2 className="main-Heading-white fw-bold display-6 my-3">
                 We’ve Built A Platform To Buy And Sell Shares
               </h2>
-              <p className="white">
+              <p className="fs-16 fw-semibold white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
               </p>
               <Row className="mt-5">
                 <Col
                   xs={12}
-                  className="d-flex justify-content-center align-items-center mb-4"
+                  className="d-flex justify-content-center align-items-center mb-5"
                 >
                   <Image src={SecurUserData.src} className="img-fluid" alt="" />
                   <div className="ms-5">
-                    <h5 className="white">Secure User Data</h5>
-                    <p className="white">
+                    <h5 className="fs-22 fw-semibold text-capitalize white">Secure User Data</h5>
+                    <p className="fs-16 fw-medium white mb-0">
                       Lorem ipsum dolor sit amet, consect adipiscing elit, sed
                       do eiusmod tempor incidiunt ut labore et dolore magna
                       aliqua
@@ -109,7 +109,7 @@ const About = () => {
                 </Col>
                 <Col
                   xs={12}
-                  className="d-flex justify-content-center align-items-center mb-4"
+                  className="d-flex justify-content-center align-items-center mb-5"
                 >
                   <Image
                     src={MostCreadibility.src}
@@ -117,8 +117,8 @@ const About = () => {
                     alt=""
                   />
                   <div className="ms-5">
-                    <h5 className="white">Most Creadibility</h5>
-                    <p className="white">
+                    <h5 className="fs-22 fw-semibold text-capitalize white">Most Creadibility</h5>
+                    <p className="fs-16 fw-medium white mb-0">
                       Lorem ipsum dolor sit amet, consect adipiscing elit, sed
                       do eiusmod tempor incidiunt ut labore et dolore magna
                       aliqua
@@ -127,7 +127,7 @@ const About = () => {
                 </Col>
                 <Col
                   xs={12}
-                  className="d-flex justify-content-center align-items-center mb-4"
+                  className="d-flex justify-content-center align-items-center mb-5"
                 >
                   <Image
                     src={BigDataInsights.src}
@@ -135,8 +135,8 @@ const About = () => {
                     alt=""
                   />
                   <div className="ms-5">
-                    <h5 className="white">Big Data Insights</h5>
-                    <p className="white">
+                    <h5 className="fs-22 fw-semibold text-capitalize white">Big data Insights</h5>
+                    <p className="fs-16 fw-medium white mb-0">
                       Lorem ipsum dolor sit amet, consect adipiscing elit, sed
                       do eiusmod tempor incidiunt ut labore et dolore magna
                       aliqua
@@ -151,19 +151,7 @@ const About = () => {
           </Row>
         </Container>
       </section>
-      <section className=" py-5">
-        <Container>
-          <Row className="d-flex justify-content-start">
-            <Col md={6}>
-              <h5 className="">OUR TEAM</h5>
-              <h2 className="">Meet our company experts</h2>
-            </Col>
-          </Row>
-          <Row className="pt-5 d-flex justify-content-center align-items-center">
-            <OurTeam />
-          </Row>
-        </Container>
-      </section>
+      <OurTeam/>
       <Footer />
     </>
   );
