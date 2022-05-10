@@ -21,8 +21,8 @@ const Contact = () => {
         <Container>
           <Row className="py-5">
             <Col xs={12} className="text-center py-5">
-              <h1>Contact Information</h1>
-              <h5 className="white">
+              <h1 className="main-Heading-white fw-bold display-6">Contact Information</h1>
+              <h5 className="white fs-16 fw-semibold my-3">
                 Our company was founded in 2020. We work daily to become <br />
                 better and we are ready to share best practices.
               </h5>

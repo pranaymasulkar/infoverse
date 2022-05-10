@@ -9,7 +9,7 @@ const Address = () => {
     <>
       <Card className="bgbunting border-0 mb-4">
         <Card.Body className="py-4">
-          <h3 className="white">Send us a message</h3>
+          <h3 className="white fs-24 fw-semibold">Send us a message</h3>
           <Card.Text className="white">
             <FaLocationArrow /> 202, 2 floor, Shree Krishna Enclave, Near
             Jayanti Nagri 3, New Somalwada, Beltarodi NAGPUR -34, MS (IND)

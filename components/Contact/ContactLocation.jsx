@@ -6,11 +6,11 @@ const ContactLocation = () => {
   return (
     <>
       <div>
-        <h3 className="white mb-3">Find our office</h3>
+        <h3 className="white fs-24 fw-semibold mb-3">Find our office</h3>
         <iframe
           src={iframe}
           width="100%"
-          height="263"
+          height="260"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         />
