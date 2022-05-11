@@ -4,17 +4,18 @@ import ClientCard from "../ClientProfile/ClientCard";
 
 const ClientProfile = ({ Classes, Title, SubTitle }) => {
   return (
-    <section className="mainbg py-5">
+    <section className="info-clinetsec mainbg py-5">
       <Container>
         <Row>
           <Col className={Classes}>
-            <h2>{Title}</h2>
-            <p>{SubTitle}</p>
+            <h2 className="main-Heading-white fw-bold display-6">{Title}</h2>
+            <p className="white fs-16 fw-semibold">{SubTitle}</p>
           </Col>
         </Row>
-        <Row>
+        <Row className="mb-5 pb-5">
           <ClientCard />
         </Row>
+        <Row className="mb-5"></Row>
       </Container>
     </section>
   );

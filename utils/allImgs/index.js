@@ -9,7 +9,6 @@ import SoftwareDevelopment from "../../assets/img/core-img/serv-Software-Develop
 import uiuxDesigning from "../../assets/img/core-img/serv-uiux-Designing.png";
 import WebDevelopment from "../../assets/img/core-img/serv-Web-Development.png";
 
-
 import blog1 from "../../assets/img/blog-img/blog1.png";
 import blog2 from "../../assets/img/blog-img/blog2.png";
 import blog3 from "../../assets/img/blog-img/blog3.png";
@@ -38,6 +37,7 @@ import Portfolio4 from "../../assets/img/portfolio-img/portfolio4.png";
 import Portfolio5 from "../../assets/img/portfolio-img/portfolio5.png";
 import Portfolio6 from "../../assets/img/portfolio-img/portfolio6.png";
 
+import clientbaner from "../../assets/img/core-img/clientbaner.png"
 import Clientlog1 from "../../assets/img/client-img/cl-1.png";
 import Clientlog2 from "../../assets/img/client-img/cl-2.png";
 import Clientlog3 from "../../assets/img/client-img/cl-3.png";
@@ -55,6 +55,11 @@ import BlockchinHero2 from "../../assets/img/core-img/bchero2.png";
 
 import AiTechBaner from "../../assets/img/core-img/aitech.png";
 import Aiserve from "../../assets/img/core-img/aiserve.png";
+
+import SpaceBanner from "../../assets/img/core-img/spaceBanner.png";
+import SpaceBusines from "../../assets/img/core-img/spacebusin.png";
+
+
 
 export {
 
@@ -94,7 +99,8 @@ export {
 	Portfolio4,
 	Portfolio5,
 	Portfolio6,
-
+	
+	clientbaner,
 	Clientlog1,
 	Clientlog2,
 	Clientlog3,
@@ -111,5 +117,8 @@ export {
 
 	AiTechBaner,
 	Aiserve,
+
+	SpaceBanner,
+	SpaceBusines,
 	
 }

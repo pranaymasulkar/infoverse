@@ -30,8 +30,8 @@ const BlockCategoryCard = () => {
         <Col xs={12} md={4} key={Bcategory.id}>
           <Card className="mainbg white mb-4">
             <Card.Body className="p-4">
-              <Card.Title>{Bcategory.Title}</Card.Title>
-              <Card.Text>{Bcategory.Subtitle}</Card.Text>
+              <Card.Title className="white fs-22 fw-semibold">{Bcategory.Title}</Card.Title>
+              <Card.Text className="white fs-16 fw-semibold">{Bcategory.Subtitle}</Card.Text>
             </Card.Body>
           </Card>
         </Col>

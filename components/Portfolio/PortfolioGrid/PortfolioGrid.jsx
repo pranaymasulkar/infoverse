@@ -55,8 +55,8 @@ const PortfolioGrid = () => {
         <Container className="container">
           <Row className="py-5">
             <Col xs={12} md={8} className="text-start">
-              <h1>Selected Projects</h1>
-              <h5>
+              <h1 className="main-Heading-blue fw-bold display-6">Selected Projects</h1>
+              <h5 className="color-main fs-16 fw-semibold mt-3">
                 We are passionate to create deeply connected brands, services,
                 and campaigns to enable stable and successful relationships
                 between businesses and customers.
@@ -72,7 +72,7 @@ const PortfolioGrid = () => {
                       <Image src={Portfolio.PortImg.src} alt={Portfolio.Title} />
                       <figcaption>
                         {/* <h2>{Portfolio.Title} <span>{Portfolio.Title}</span></h2> */}
-                        <h2>
+                        <h2 className="main-Heading-white fw-bold display-6">
                           <span>{Portfolio.Title}</span>
                         </h2>
                         <p>{Portfolio.Description}</p>

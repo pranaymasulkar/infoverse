@@ -20,46 +20,48 @@ const AiTechnology = () => {
     <>
       <Header />
       <HeroContainerFour
-        TextColor="text-center py-5 mb-5"
+        TextColor="white text-center py-5 mb-5"
         Title="The Best AI For Everyone"
-        TitleClass="vkkjkb"
+        TitleClass="main-Heading-white fw-bold display-6"
         SubTitle="Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. "
         SubTitleClass="white"
         Heroimg={AiTechBaner}
       />
 
-      <section className="info-home-spacetech aiplatform-arti">
-        <Container fluid>
-          <Row className="d-flex justify-content-end align-items-center">
-            <Col md={6} className="info-home-space-detail py-5">
-              <div className="p-5 my-5 white">
-                <h2>
-                  A Artificial Intelligence platform that enables developer
-                  solutions
-                </h2>
-                <h5>
-                  Spend real fights effective anything extra by leading.
-                  Mouthwatering leading how real formula also locked-in have can
-                  mountain thought. Jumbo plus shine sale.
-                </h5>
-                <ul>
-                  <li>
-                    Modular structure enabling easy implementation for different
-                    softwares
-                  </li>
-                  <li>
-                    Advanced payment and processing technologies, fine-tuned
-                    from more than 3 years of development testing
-                  </li>
-                  <li>
-                    Unified AppStore for retail cryptocurrency solutions with a
-                    Crypterium products audience
-                  </li>
-                </ul>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+      <section className="aiplatform-arti py-5">
+        <section className="info-inner-section my-5">
+          <Container fluid>
+            <Row className="d-flex justify-content-end align-items-center">
+              <Col md={6} className="info-home-space-detail">
+                <div className="p-5 white">
+                  <h2 className="main-Heading-white fw-bold fs-34">
+                    <span className="text-uppercase">A Artificial Intelligence</span> platform that enables developer
+                    solutions
+                  </h2>
+                  <h5 className="white fw-medium fs-20 my-3">
+                    Spend real fights effective anything extra by leading.
+                    Mouthwatering leading how real formula also locked-in have
+                    can mountain thought. Jumbo plus shine sale.
+                  </h5>
+                  <ul className="ps-3 fs-16 fw-regular">
+                    <li className="mt-4">
+                      Modular structure enabling easy implementation for
+                      different softwares
+                    </li>
+                    <li className="mt-4">
+                      Advanced payment and processing technologies, fine-tuned
+                      from more than 3 years of development testing
+                    </li>
+                    <li className="mt-4">
+                      Unified AppStore for retail cryptocurrency solutions with
+                      a Crypterium products audience
+                    </li>
+                  </ul>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
       </section>
 
       <AiServiceContainer

@@ -34,7 +34,7 @@ const Accordian = () => {
         "gained extended experience in ec orci sed justo blandit pharetra nec id urna. Maecenas ac velit vitae est ullamcorper tempus. Nam consectetur quis ipsum eu venenatis.",
     },
     {
-        id: 6,
+      id: 6,
       Title: "How to create cryptocurrency wallet?",
       Description:
         "gained extended experience in ec orci sed justo blandit pharetra nec id urna. Maecenas ac velit vitae est ullamcorper tempus. Nam consectetur quis ipsum eu venenatis.",
@@ -42,14 +42,16 @@ const Accordian = () => {
   ];
   return (
     <>
-      <Accordion defaultActiveKey="0">
-        {Faqs.map((Faq) => (
-          <Accordion.Item eventKey={Faq.id} Key={Faq.id}>
-            <Accordion.Header>{Faq.Title}</Accordion.Header>
-            <Accordion.Body>{Faq.Description}</Accordion.Body>
-          </Accordion.Item>
-        ))}
-      </Accordion>
+      <div className="info-acordian">
+        <Accordion defaultActiveKey="0">
+          {Faqs.map((Faq) => (
+            <Accordion.Item eventKey={Faq.id} Key={Faq.id} className="mb-2 rounded">
+              <Accordion.Header>{Faq.Title}</Accordion.Header>
+              <Accordion.Body>{Faq.Description}</Accordion.Body>
+            </Accordion.Item>
+          ))}
+        </Accordion>
+      </div>
     </>
   );
 };

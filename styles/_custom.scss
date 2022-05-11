@@ -99,6 +99,14 @@ body {
   margin-top: -15%;
 }
 
+.info-clinetsec {
+  background-image: url(../assets/img/core-img/Clie.png),
+    url(../assets/img/core-img/ents.png),
+    linear-gradient(to right, rgba(12, 18, 53, 1), rgba(12, 18, 53, 1));
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top right, bottom left;
+  background-color: var(--color-main);
+}
 .client-proflie {
   min-height: 200px;
   border-color: var(--color-white);
@@ -113,11 +121,41 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
 }
-
+// Ai Page
 .aiplatform-arti {
-  // background-image: url(../assets/img/core-img/aiplatbg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background: var(--color-blue-zodiac) url(../assets/img/core-img/aiplatbg.png)
     center center no-repeat;
+  .info-inner-section {
+    background-image: url(../assets/img/core-img/ailinesbga2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .info-home-space-detail {
+      background-color: #00000057;
+    }
+  }
+}
+
+.info-acordian {
+  .accordion {
+    .accordion-item {
+      .accordion-header {
+        .accordion-button {
+          color: var(--color-white);
+          background-color: var(--color-main);
+          font-weight: 800;
+          &:hover,
+          &:focus,
+          &.active {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+      .accordion-body {
+        color: var(--color-code-gray);
+      }
+    }
+  }
 }

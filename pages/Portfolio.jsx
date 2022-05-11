@@ -17,11 +17,11 @@ const Portfolio = () => {
     <>
       <Header />
       <section className="inabout-hero mainbg py-5">
-        <Container>
-          <Row className="py-5 mb-5">
-            <Col xs={12} md={5} className="text-start py-5 mb-5">
-              <h1>Our work</h1>
-              <h5 className="white mb-5">
+        <Container className="ps-5">
+          <Row className="py-5 mb-5 ps-5">
+            <Col xs={12} md={5} className="text-start py-5 mb-5 ps-5">
+              <h1 className="main-Heading-white fw-bold display-6">Our work</h1>
+              <h5 className="white fs-16 fw-semibold my-3 mb-5">
                 For over 32 years our goal has been scalable, compelling growth
                 for brands that matter. The data driven practices cultivate
                 human centered, socially inclusive solutions. Take a look at our

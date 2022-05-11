@@ -38,11 +38,8 @@ const AiServiceCard = () => {
               <Image src={AiServ.ServiceImg.src} className="img-fluid" />
             </Col>
             <Col md={8} className="">
-              <TitleIntro
-                Classes="white"
-                Title={AiServ.Title}
-                SubTitle={AiServ.SubTitle}
-              />
+              <h3 className="fs-24 fw-bold white">{AiServ.Title}</h3>
+              <p className="white fw-semibold fs-16 mb-0">{AiServ.SubTitle}</p>
             </Col>
           </Row>
         </Col>
