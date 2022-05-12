@@ -58,6 +58,7 @@ import Aiserve from "../../assets/img/core-img/aiserve.png";
 
 import SpaceBanner from "../../assets/img/core-img/spaceBanner.png";
 import SpaceBusines from "../../assets/img/core-img/spacebusin.png";
+import joingroup from "../../assets/img/core-img/joingroup.png";
 
 
 
@@ -120,5 +121,6 @@ export {
 
 	SpaceBanner,
 	SpaceBusines,
+	joingroup,
 	
 }

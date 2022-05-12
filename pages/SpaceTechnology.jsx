@@ -9,6 +9,7 @@ import ClientProfile from "../components/Clientel/ClientProfile/ClientProfile";
 import AiServiceContainer from "../components/AiTechnology/AiServiceContainer";
 import SpaceHeroBanner from "../components/SpaceTech/SpaceHeroBanner";
 import { SpaceBusines } from "../utils/allImgs/";
+import JoinUsBanner from "../components/SpaceTech/JoinUsBanner";
 
 const Header = dynamic(
   () => {
@@ -60,7 +61,7 @@ const AiTechnology = () => {
         </Container>
       </section>
 
-      
+      <JoinUsBanner/>
       <Footer />
     </>
   );

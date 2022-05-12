@@ -18,7 +18,7 @@ const Footer = (props) => {
           <Col md={3}>
             <div>
               <h5>Office</h5>
-              <Nav className="flex-column">
+              <Nav className="flex-column fs-14 fw-regular">
                 <Nav.Link disabled>
                   Studio Stukram 1910 Gateway Road, Portland, Oregon 97230
                 </Nav.Link>
@@ -30,7 +30,7 @@ const Footer = (props) => {
           <Col md={3}>
             <div>
               <h5>Links</h5>
-              <Nav className="flex-column">
+              <Nav className="flex-column fs-14 fw-regular">
                 <Nav.Link disabled>About Us</Nav.Link>
                 <Nav.Link disabled>Contact us</Nav.Link>
                 <Nav.Link disabled>Our Work</Nav.Link>
@@ -41,7 +41,7 @@ const Footer = (props) => {
           <Col md={3}>
             <div>
               <h5>Follow Us</h5>
-              <Nav className="justify-content-start">
+              <Nav className="justify-content-start socialico">
                 <Nav.Link href="#"><BsTwitter/></Nav.Link>
                 <Nav.Link href="#"><FaFacebookF/></Nav.Link>
                 <Nav.Link href="#"><FaLinkedinIn/></Nav.Link>
