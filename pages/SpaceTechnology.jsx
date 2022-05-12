@@ -60,12 +60,7 @@ const AiTechnology = () => {
         </Container>
       </section>
 
-      <ClientProfile
-        Classes="white text-start py-5"
-        Title="WE ARE AN ASTRONOMY COMPANY"
-        SubTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras risus risus, convallis eu nisi in, pretium blandit purus. Nam eu tempor justo, vitae tempor enim. Nam ornare rhoncus rutrum. In est mi, blandit vel interdum eget, fermentum a sapien. Quisque vitae ipsum nunc."
-      />
-
+      
       <Footer />
     </>
   );
